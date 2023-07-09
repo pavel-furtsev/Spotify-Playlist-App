@@ -1,0 +1,30 @@
+.Playlist {
+    width: 40%;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 50px;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.playlistName {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid;
+    outline: none;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.saveButton {
+    justify-self: end;
+    width: 50%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+}

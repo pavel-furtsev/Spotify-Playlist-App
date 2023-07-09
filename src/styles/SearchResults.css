@@ -1,0 +1,14 @@
+.SearchResults {
+    width: 55%;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.searchResultsTitle {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: auto;
+    font-size: 25px;
+}

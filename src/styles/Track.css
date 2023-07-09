@@ -1,0 +1,28 @@
+
+.Track {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid;
+    padding-top: 10px;
+    text-align: start;
+    margin-right: 5px;
+}
+
+.songInfo {
+    max-width: 80%;
+}
+
+.trackButton {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    font-size: 20px;
+    margin: auto 5px;
+}
+
+.trackButton:hover {
+    background-color: black;
+    color: white
+}

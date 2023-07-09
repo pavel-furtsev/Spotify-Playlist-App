@@ -1,0 +1,19 @@
+.TrackList {
+    padding: 0;
+    height: 45vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.TrackList::-webkit-scrollbar {
+    width: 5px;
+}
+   
+.TrackList::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px transparent;
+}
+   
+.TrackList::-webkit-scrollbar-thumb {
+    background-color: black;
+    outline: none;
+}

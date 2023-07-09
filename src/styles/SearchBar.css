@@ -1,0 +1,30 @@
+
+.SearchBar {
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    width: 65%;
+    display: inline-block;
+}
+
+.serachInput, 
+.searchButton {
+    font-size: 25px;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+}
+
+.serachInput {
+    width: 60%;
+    font-style: italic;
+    text-indent: 10px;
+}
+
+.searchButton {
+    background-color: white;
+    margin-left: 10px;
+    width: auto;
+    text-transform: uppercase;
+    font-weight: bold;  
+}
