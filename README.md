@@ -7,13 +7,14 @@
 
 ## Progress:
 
-  - [ ] Create Static Components
-  - [ ] Implement Track Listing in The Component Tree
-  - [ ] Implement Playlists in The Component Tree
-  - [ ] Implement Adding Songs To a Custom Playlist
-  - [ ] Implement Removing Songs From a Custom Playlist
-  - [ ] Implement Playlist Renaming
-  - [ ] Implement Saving the Playlist to a User's Account
-  - [ ] Implement Spotify Search Request
-  - [ ] Save a User's Playlist
+  - [x] Create Static Components
+  - [x] Implement Track Listing in The Component Tree
+  - [x] Implement Playlists in The Component Tree
+  - [x] Implement Adding Songs To a Custom Playlist
+  - [x] Implement Removing Songs From a Custom Playlist
+  - [x] Implement Playlist Renaming
+  - [x] Implement Saving the Playlist to a User's Account
+  - [x] Implement Spotify Search Request
+  - [x] Save a User's Playlist
+  - [ ] Improve styling
   - [ ] Testing
