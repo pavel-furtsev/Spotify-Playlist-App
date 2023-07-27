@@ -1,21 +1,42 @@
-.App-header {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start; 
-  font-size: 20px;
-  text-align: center;
-  color: black;
-  height: auto;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Fasthand&display=swap');
 
-.heighlite {
-  color: gray;
+:root {
+  --dark-background: #04041e;
+  --bright-background: #ff2a6d;
 }
 
 body {
-  background-color: black;
+  margin: 0;
+  background-color: var(--bright-background);
+  font-family: 'Cutive Mono', monospace;
+}
+
+.App-header {
+  background-color: var(--dark-background);
+  color: #05d9e8;
+  box-shadow: 0px 10px 10px #b4013a;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  outline: none;
+
+  padding: 0;
+  margin: 0;
+
+  height: auto;
+  width: 100%;
+
+  text-align: center;
+  font-family: 'Fasthand', cursive;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.heighlite {
+  color: #d1f7ff;
 }
 
 main {
@@ -28,4 +49,21 @@ main {
   display: flex;
   justify-content: space-between;
   width: 65%;
+}
+
+/* glow animation */
+
+.App-header, .heighlite {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #ff2a6d, 0 0 10px #ff2a6d;
+  }
+  to {
+    text-shadow: 0 0 10px #ff2a6d, 0 0 15px #ff4da6;
+  }
 }

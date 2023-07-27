@@ -5,14 +5,19 @@
     margin-top: 50px;
     width: 65%;
     display: inline-block;
+    
 }
 
 .serachInput, 
 .searchButton {
     font-size: 25px;
+    font-family: 'Cutive Mono', monospace;
     border-radius: 30px;
-    padding: 10px;
     border: none;
+    outline: none;
+    background-color: white;
+    box-shadow: 0px 5px 5px #b4013a;
+    height: 45px
 }
 
 .serachInput {
@@ -22,9 +27,12 @@
 }
 
 .searchButton {
-    background-color: white;
-    margin-left: 10px;
+    background-color: var(--dark-background);
+    color: white;
+    margin-left: 20px;
+    padding: 0px 20px 0px 20px;
     width: auto;
-    text-transform: uppercase;
-    font-weight: bold;  
+    font-family: 'Fasthand', cursive;
+    cursor: pointer;
+    vertical-align: middle;
 }
