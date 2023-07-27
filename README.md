@@ -16,5 +16,5 @@
   - [x] Implement Saving the Playlist to a User's Account
   - [x] Implement Spotify Search Request
   - [x] Save a User's Playlist
-  - [ ] Improve styling
+  - [x] Improve styling
   - [ ] Testing
