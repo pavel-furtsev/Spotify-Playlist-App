@@ -5,15 +5,18 @@ import './App.css';
 
 import Playlist from './components/Playlist';
 import SearchBar from './components/SearchBar';
-import SearchResults from './components/SearchResults'; 
+import SearchResults from './components/SearchResults';
+import Player from './components/Player'; 
 
 function App() {
   const [searchResults, setSearchResults] = useState([]);
   const [playlistName, setPlaylistName] = useState("New playlist");
   const [playlistTracks, setPlaylistTracks] = useState([]);
+  const [playbackTrack, setPlaybackTrack] = useState();
 
   const search = useCallback((query) => {
     Spotify.search(query).then(setSearchResults);
+    setPlaybackTrack(null);
   }, []);
 
   const addTrack = useCallback((track) => {
@@ -34,6 +37,10 @@ function App() {
     });
   }, [playlistName, playlistTracks]);
 
+  const playPreview = useCallback((track) => {
+    setPlaybackTrack(track);
+  ;}, [])
+
   return (
     <>
       <header className="App-header">
@@ -42,14 +49,25 @@ function App() {
       <main>
         <SearchBar onSearch={search}/>
         <div className="lists">
-          <SearchResults tracks={searchResults} onAction={addTrack}/>
+          <SearchResults 
+            tracks={searchResults}
+            playing={playbackTrack}
+            onAction={addTrack}
+            onPlay={playPreview}/>
           <Playlist 
-            tracks={playlistTracks} 
+            tracks={playlistTracks}
+            playing={playbackTrack}
             playlistName={playlistName} 
             onNameChange={setPlaylistName}
             onAction={removeTrack}
-            onSave={savePlaylist}/>
+            onSave={savePlaylist}
+            onPlay={playPreview}/>
         </div>
+        {
+          playbackTrack ? 
+          <Player track={playbackTrack}/> :
+          <></>
+        }
       </main>
     </>
   );

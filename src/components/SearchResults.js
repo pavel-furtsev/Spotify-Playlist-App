@@ -4,12 +4,16 @@ import "../styles/SearchResults.css";
 
 function SearchResults(props){
     
-    const {tracks, onAction} = props;
+    const {tracks, onAction, onPlay} = props;
     
     return (
         <div className="SearchResults">
             <h2 className="searchResultsTitle">Search results</h2>
-            <TrackList tracks={tracks} button="+" onAction={onAction}/>
+            <TrackList 
+                tracks={tracks}
+                button="+" 
+                onAction={onAction}
+                onPlay={onPlay}/>
         </div>
     )
 }

@@ -8,7 +8,8 @@ function Playlist(props){
         onNameChange, 
         tracks,
         onAction,
-        onSave
+        onSave,
+        onPlay
     } = props;
 
     const handleNameChange = useCallback((event) => {
@@ -18,7 +19,7 @@ function Playlist(props){
     return (
         <div className="Playlist">
             <input className="playlistName" value={playlistName} onChange={handleNameChange}/>
-            <TrackList button="-" tracks={tracks} onAction={onAction}/>
+            <TrackList button="-" tracks={tracks} onAction={onAction} onPlay={onPlay}/>
             <button className="saveButton" onClick={onSave}>Save to spotify</button>
         </div>
     )

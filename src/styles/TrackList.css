@@ -1,6 +1,6 @@
 .TrackList {
     padding: 0;
-    height: 45vh;
+    height: 40vh;
     overflow-x: hidden;
     overflow-y: auto;
 }
