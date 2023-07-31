@@ -1,5 +1,18 @@
-.audioPlayer{
+.playerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 65%;
+    margin: auto;
+}
+
+.audioPlayer{
+    width: 95%;
     height: 35px;
     padding: 15px;
+}
+
+.playerContainer img{
+    height: 30px;
+    color: white;
 }

@@ -3,7 +3,7 @@ import "../styles/Track.css";
 
 
 function Track(props){
-    const {onAction, track, onPlay} = props;
+    const {onAction, track, onPlay, playing} = props;
 
     const onClick = useCallback((event) => {
         onAction(track);
@@ -14,10 +14,10 @@ function Track(props){
     }, [track, onPlay]);
 
     return (
-        <li className="Track">
+        <li className="Track" id={playing !== null && playing.id === track.id ? "playing" : "notPlaying"}>
             <div className="songInfo">
                 <div className="songTitle">
-                    <h3>{track.name}</h3>
+                    <h3><a className="trackLink" href={track.uri}>{track.name}</a></h3>
                     <button className="playButton" onClick={onPlayButton}>▶</button>
                 </div>
                 <p>{track.album + " | " + track.artist}</p>

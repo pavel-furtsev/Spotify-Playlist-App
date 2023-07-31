@@ -4,7 +4,7 @@ import "../styles/SearchResults.css";
 
 function SearchResults(props){
     
-    const {tracks, onAction, onPlay} = props;
+    const {tracks, onAction, onPlay, playing} = props;
     
     return (
         <div className="SearchResults">
@@ -13,7 +13,8 @@ function SearchResults(props){
                 tracks={tracks}
                 button="+" 
                 onAction={onAction}
-                onPlay={onPlay}/>
+                onPlay={onPlay}
+                playing={playing}/>
         </div>
     )
 }

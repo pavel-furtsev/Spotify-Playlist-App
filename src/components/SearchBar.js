@@ -14,9 +14,19 @@ function SearchBar(props){
         onSearch(query);
     }, [query, onSearch]);
 
+    const handleKeyDown = (event) => {
+        if (event.key === 'Enter') {
+          search();
+        }
+      };
+
     return (
         <div className="SearchBar">
-            <input className="serachInput" type="text" placeholder="Search for a song" onChange={handleQueryChange}/>
+            <input className="serachInput" 
+                type="text" 
+                placeholder="Search for a song" 
+                onChange={handleQueryChange} 
+                onKeyDown={handleKeyDown}/>
             <button className="searchButton" onClick={search}>Search</button>
         </div>
     )
